@@ -10,7 +10,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 50%;
+  width: 60%;
   height: 100vh;
   background-image: linear-gradient(to top, #021b79, #083194, #0b47af, #0b5eca, #0575e6);
   .leftRegisterSection-text{
@@ -41,7 +41,7 @@
 }
 
 .rightRegisterSection{
-  width: 50%;
+  width: 40%;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -96,7 +96,7 @@
     button{
       width: 100%;
       height: 60px;
-      border-radius: 10px;
+      border-radius: 55px;
       border: none;
       margin-top: 15px;
       background-color: var(--blue, #0575e6);

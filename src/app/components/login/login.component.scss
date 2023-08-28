@@ -1,0 +1,125 @@
+.LoginSection {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.leftLoginSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  height: 100vh;
+  background-image: linear-gradient(to top, #021b79, #083194, #0b47af, #0b5eca, #0575e6);
+
+  .leftLoginSection-text {
+    h2 {
+      margin: 0;
+      color: var(--white, #FFF);
+      font-family: 'Poppins';
+      font-size: 40px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+    }
+
+    p {
+      margin: 0;
+      color: white;
+      font-family: 'Poppins', sans-serif;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+    }
+  }
+}
+
+.circleDecoration {
+  position: absolute;
+  bottom: 0;
+}
+
+.rightLoginSection {
+  width: 40%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    h2,
+    p,
+    input {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      color: #333333;
+    }
+
+    h2 {
+      font-size: 25px;
+    }
+
+    p {
+      font-size: 17px;
+      margin-bottom: 20px;
+    }
+
+    .input-container {
+      display: flex;
+      width: 300px;
+      height: 60px;
+      padding: 0 15px;
+      border: 1px solid #d1d0d0;
+      border-radius: 30px;
+      align-items: center;
+
+      img {
+        width: 20px;
+        height: 20px;
+        margin: 0 10px;
+      }
+
+      input {
+        width: 250px;
+        outline: none;
+        border: none;
+        border-radius: 10px;
+        padding: 10px;
+        color: #333333;
+        opacity: 0.7;
+        font-family: Poppins;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+    }
+
+    button {
+      width: 100%;
+      height: 60px;
+      border-radius: 55px;
+      border: none;
+      background-color: var(--blue, #0575e6);
+      color: var(--white, #FFF);
+      font-family: 'Poppins', sans-serif;
+      font-size: 17px;
+      font-style: normal;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: var(--blue, #034f9c);
+    }
+  }
+
+}
