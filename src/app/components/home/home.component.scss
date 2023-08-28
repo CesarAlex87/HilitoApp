@@ -1,0 +1,56 @@
+div  {
+  flex-direction: column;
+  h3 {
+    margin: 0;
+    padding: 15px 0 0 15px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 17px;
+    font-style: bold;
+    font-weight: 500;
+    line-height: normal;
+  }
+}
+div {
+  p {
+    margin: 0;
+    padding: 20px 0px 0px 20px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+
+
+    img {
+      display: inline-block;
+    }
+  }
+}
+.HomeBackgound {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  background-image: linear-gradient(to top, #021b79, #083194, #0b47af, #0b5eca, #0575e6);
+  .LeftHome {
+    background-color: black;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    width: 10%;
+    height: 100vh;
+  }
+}
+.HomeBackgound {
+  .CenterHome {
+    background-color: black;
+      width: 100vh;
+      margin: 0 auto;;
+      top: 100%;
+      text-align: center;
+      color: white;
+  }
+}
+
+
