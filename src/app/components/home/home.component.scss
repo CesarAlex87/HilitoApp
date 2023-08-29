@@ -46,6 +46,7 @@
         align-items: center;
         gap: 10px;
         p {
+          border: 1px solid white;
           margin: 0;
           padding: 0;
           color: white;
@@ -72,12 +73,87 @@
 
 //Estilos del contenedor del contenido principal
 .mainContent {
-  margin: 0;
-  padding: 0;
+  margin: 25px 80px 25px 190px;
+  .agregarPost{
+    width: 600px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid white;
+    //Agregar estilo de los elementos que se encuentren
+    //dentro del contenido principal
+    .postContainer {
+      diplay: flex;
+      flex-direction: row;
+      background-color: black;
+      border-radius: 20px;
+      margin-top: 15px;
+      margin-left: 40px;
+      width: 525px;
+      height: 115px;
+      align-items: center;
+      .userName {
+        border: 1px solid white;
+        margin: 0;
+        padding: 0;
+        color: white;
+        font-family: "Poppins", sans-serif;
+        font-size: 17px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+      }
+      .imgPerfilPost{
+        border: 1px solid white;
+        margin: 0;
 
-  //Agregar estilo de los elementos que se encuentren
-  //dentro del contenido principal
-  p {
-    margin: 0;
+      }
+      .inputPost{
+        width: 400px;
+        height: 20px;
+        margin: 0;
+        padding:0;
+      }
+      .imgClipPost{
+        margin: 0;
+      }
+    }
+  }
+  .postAgregado{
+
+    .agregadoPostCt{
+      diplay: flex;
+      flex-direction: row;
+      background-color: black;
+      border-radius: 20px;
+      margin-top: 15px;
+      margin-left: 40px;
+      width: 525px;
+      height: 160px;
+      align-items: center;
+      .Prueba{
+        color: white;
+      }
+    }
+  }
+}
+.sugerenciasContent{
+  margin: 25px 10px 300px 30px;
+  .sugerencias{
+  width: 300px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid white;
+    .sugerenciasContainer{
+          diplay: flex;
+            flex-direction: row;
+            background-color: black;
+            border-radius: 20px;
+            width: 300px;
+            height: 450px;
+            align-items: center;
+
+    }
   }
 }
