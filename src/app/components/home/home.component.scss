@@ -1,40 +1,10 @@
-.menuTitle {
-  font-size: 25px;
-  color: white;
-  font-family: "Poppins", sans-serif;
-  text-align: center;
-}
-
-
-.itemsContainer {
-  padding-left: 10px;
-}
-.itemMenu {
+//Estilos del contenedor principal
+.Home {
   display: flex;
   flex-direction: row;
-  cursor: pointer;
-  width: 100%;
-  height: 60px;
-  align-items: center;
-  gap: 10px;
-  p {
-    margin: 0;
-    color: white;
-    font-family: "Poppins", sans-serif;
-    font-size: 17px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-  }
-  img {
-    width: 20px;
-    display: inline-block;
-  }
-}
-
-.HomeBackgound {
   width: 100vw;
   height: 100vh;
+  margin: 0;
   background-image: linear-gradient(
     to top,
     #021b79,
@@ -43,25 +13,71 @@
     #0b5eca,
     #0575e6
   );
-  .LeftHome {
-    display: flex;
-      flex-direction: column;
-    background-color: black;
+  box-sizing: border-box;
+
+  //Estilos del contenedor del menu
+  .menu {
+    width: 200px;
+    height: 100%;
     display: flex;
     flex-direction: column;
-    width: 150px;
-    height: 100vh;
+    background-color: black;
+
+    //Estilos del contenedor del logo
+    .menuTitle {
+      font-size: 25px;
+      margin-top: 25px;
+      color: white;
+      font-family: "Poppins", sans-serif;
+      text-align: center;
+    }
+
+    //Estilos del contenedor de los items
+    .itemsContainer {
+      margin-left: 20px;
+
+      //Estilos de los items
+      .itemMenu {
+        display: flex;
+        flex-direction: row;
+        cursor: pointer;
+        width: 100%;
+        height: 60px;
+        align-items: center;
+        gap: 10px;
+        p {
+          margin: 0;
+          padding: 0;
+          color: white;
+          font-family: "Poppins", sans-serif;
+          font-size: 17px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: normal;
+        }
+        img {
+          margin: 0;
+          width: 20px;
+        }
+      }
+      //Estilos del item seleccionado
+      .itemMenu--profile {
+        img {
+          width: 25px;
+        }
+      }
+    }
   }
 }
-.CenterHome {
-  display: flex;
-  background-color: black;
-  text-align: center;
-  align-items: center;
-  border-radius: 20px;
-  height: 50px;
-  border: 1px white solid;
-  width: 100vh;
-  top: 100%;
-  color: white;
+
+//Estilos del contenedor del contenido principal
+.mainContent {
+  margin: 0;
+  padding: 0;
+
+  //Agregar estilo de los elementos que se encuentren
+  //dentro del contenido principal
+  p {
+    margin: 0;
+  }
 }
