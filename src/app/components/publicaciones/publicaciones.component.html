@@ -1,1 +1,16 @@
-<p>publicaciones works!</p>
+<div>
+  <div>
+    <h1>NUEVA PUBLICACION</h1>
+    <input type="text" [(ngModel)]="mensaje" placeholder="Como te sientes el dia de hoy?">
+    <button type="submit" (click)="publicar()">Publicar</button>
+  </div>
+  <div>
+    <h1>PUBLICACIONES</h1>
+    <div *ngFor="let publicacion of publicaciones.reverse()">
+      <div>
+        <h3>ID: {{publicacion.id}}, IdUsuario: {{publicacion.idUsuario}}</h3>
+        <p>{{publicacion.mensaje}}</p>
+        <hr>
+      </div>
+  </div>
+</div>
