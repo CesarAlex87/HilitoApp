@@ -36,8 +36,8 @@ export class PublicacionesComponent implements OnInit {
   }
 
   publicar() {
-    let publicacionActual:Publicacion = {id: 0, idUsuario: '', mensaje: ''};
-    publicacionActual.id = this.getUserId();
+    let publicacionActual:Publicacion = {id: '', idUsuario: '', mensaje: ''};
+    publicacionActual.id = this.getUserId().toString();
     publicacionActual.idUsuario = this.generateId().toString();
     publicacionActual.mensaje = this.mensaje;
     this.publicaciones.push(publicacionActual);
@@ -45,28 +45,28 @@ export class PublicacionesComponent implements OnInit {
 
   private archivoJson = [
     {
-      "id": 1,
-      "idUsuario": "1234567890",
+      "id": "1",
+      "idUsuario": "1",
       "mensaje": "Esta es mi primera publicación"
     },
     {
-      "id": 2,
-      "idUsuario": "2345678901",
+      "id": "2",
+      "idUsuario": "2",
       "mensaje": "Hola a todos!"
     },
     {
-      "id": 3,
-      "idUsuario": "3456789012",
+      "id": "3",
+      "idUsuario": "3",
       "mensaje": "¿Qué tal el día de hoy?"
     },
     {
-      "id": 4,
-      "idUsuario": "4567890123",
+      "id": "4",
+      "idUsuario": "4",
       "mensaje": "Compartiendo un meme gracioso"
     },
     {
-      "id": 5,
-      "idUsuario": "5678901234",
+      "id": "5",
+      "idUsuario": "5",
       "mensaje": "Una foto de mi gato"
     }
   ]
