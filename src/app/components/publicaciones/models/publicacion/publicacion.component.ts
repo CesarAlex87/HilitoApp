@@ -1,5 +1,5 @@
 export interface Publicacion {
-    id?: number;
-    idUsuario: number;
+    id: number;
+    idUsuario: string;
     mensaje: string;
 }
