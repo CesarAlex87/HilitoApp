@@ -2,6 +2,7 @@ const express = require("express");
 const routerApi = require("./routes/index");
 const cors = require("cors");
 const { getHome } = require("./services/index");
+const { sequelize } = require("./libs/sequelize-model");
 
 const app = express();
 const port = process.env.PORT || 3001;
@@ -10,14 +11,8 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 const db = require("./libs/sequelize-model");
-db.sequelize
-  .sync()
-  .then(() => {
-    console.log("Synced db.");
-  })
-  .catch((err) => {
-    console.log("Failed to sync db: " + err.message);
-  });
+
+
 
 const allowedOrigins = ["http://localhost:8080"];
 const options = {
