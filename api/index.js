@@ -4,10 +4,20 @@ const cors = require("cors");
 const { getHome } = require("./services/index");
 
 const app = express();
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 3001;
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+
+const db = require("./app/models");
+db.sequelize
+  .sync()
+  .then(() => {
+    console.log("Synced db.");
+  })
+  .catch((err) => {
+    console.log("Failed to sync db: " + err.message);
+  });
 
 const allowedOrigins = ["http://localhost:8080"];
 const options = {

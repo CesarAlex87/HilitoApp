@@ -1,9 +1,12 @@
 const { pool } = require("../libs/postgres");
+const { sequelize } = require("../libs/sequelize");
+const { QueryTypes } = require("sequelize");
 
 const getPost = async (req, res) => {
-  const rta = await pool.query("SELECT * FROM posts");
-  console.log(rta.rows);
-  res.json(rta.rows);
+  const [data] = await sequelize.query("SELECT * FROM posts", {
+    type: QueryTypes.SELECT,
+  });
+  return data;
 };
 const getPostById = async (req, res) => {
   const { id } = req.params;
