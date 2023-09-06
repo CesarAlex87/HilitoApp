@@ -2,7 +2,7 @@ const express = require("express");
 const routerApi = require("./routes/index");
 const cors = require("cors");
 const { getHome } = require("./services/index");
-const { sequelize } = require("./libs/sequelize-model");
+
 
 const app = express();
 const port = process.env.PORT || 3001;
