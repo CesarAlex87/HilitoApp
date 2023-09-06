@@ -10,8 +10,6 @@ const port = process.env.PORT || 3001;
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-const db = require("./libs/sequelize-model");
-
 
 
 const allowedOrigins = ["http://localhost:8080"];
