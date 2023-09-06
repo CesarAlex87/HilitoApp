@@ -9,7 +9,7 @@ const port = process.env.PORT || 3001;
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-const db = require("./app/models");
+const db = require("./libs/sequelize-model");
 db.sequelize
   .sync()
   .then(() => {

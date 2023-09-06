@@ -1,9 +1,15 @@
-const config = {
-  port: process.env.PORT || "0000",
-  dbUser: "",
-  dbPassword: "",
-  dbHost: "",
-  dbName: "",
-};
+require("dotenv").config();
 
-module.exports = { config };
+module.exports = {
+  HOST: "",
+  USER: "",
+  PASSWORD: "",
+  DB: "",
+  dialect: "",
+  pool: {
+    max: 5,
+    min: 0,
+    acquire: 30000,
+    idle: 10000,
+  },
+};
